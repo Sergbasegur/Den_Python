@@ -1,9 +1,9 @@
 class ViewNotes:
     def greeting(self):
-        print("Вас приветствует приложение для управления личными заметками!")
+        print("Это приложение для управления заметками!")
 
     def show_main_menu(self):
-        print("Что вы хотите сделать? Выберите пункт меню:\n"
+        print("Выберите пункт меню:\n"
               "\t1. Добавить заметку\n"
               "\t2. Прочитать/Изменить/Удалить заметку\n"
               "\t3. Показать список всех заметок\n"
@@ -11,7 +11,7 @@ class ViewNotes:
               "\t0. Выйти из приложения")
 
     def show_manage_note_menu(self):
-        print("Что вы хотите сделать? Выберите пункт меню:\n"
+        print("Выберите пункт меню:\n"
               "\t1. Прочитать заметку\n"
               "\t2. Изменить заметку\n"
               "\t3. Удалить заметку\n")
@@ -19,10 +19,10 @@ class ViewNotes:
     def error(self):
         print("!!! Введите корректное число")
     def not_found(self):
-        print("Такого значения не найдено. Попробуйте еще раз.")
+        print("Не найдено. Попробуйте еще раз.")
 
     def saved_info(self):
-        print("Заметки сохранены в файл!")
+        print("Заметки сохранены в файл")
 
     def show_note(self, note):
         result = f"ID: {str(note.get_id())}|\t"
@@ -32,13 +32,13 @@ class ViewNotes:
         print(result)
 
     def show_read_all_banner(self, count):
-        result = f"\t***Все заметки***\n" \
+        result = f"\tВсе заметки :\n" \
                  f"Найдено заметок: {count}\n"
         print(result)
 
     def info_note_msg(self, key):
         info = {'add': 'добавлена', 'del': 'удалена', 'edit': 'изменена'}
-        print(f"Заметка успешно {info[key]}!")
+        print(f"Заметка {info[key]}!")
 
     def input_note_name(self):
         return input(f"Введите название заметки:")
@@ -67,4 +67,4 @@ class ViewNotes:
         return value
 
     def exit_msg(self):
-        print("Всего хорошего!")
+        print("До Свидания!")
