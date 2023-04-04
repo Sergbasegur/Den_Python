@@ -1,4 +1,4 @@
-class ViewNotes:
+class ViewNote:
     def greeting(self):
         print("Это приложение для управления заметками!")
 

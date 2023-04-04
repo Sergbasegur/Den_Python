@@ -3,7 +3,7 @@ from note import Note
 from ViewNotes import ViewNotes
 
 
-class ListNotes:
+class ListNote:
     __notes = []
     __view = ViewNotes()
     __index = 0

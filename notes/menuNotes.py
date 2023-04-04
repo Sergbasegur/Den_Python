@@ -1,10 +1,10 @@
-from listNotes import ListNotes
-from ViewNotes import ViewNotes
+from listNotes import ListNote
+from viewNotes import ViewNote
 
 
 class Menu:
-    __view = ViewNotes()
-    __notes = ListNotes()
+    __view = ViewNote()
+    __notes = ListNote()
     __commands = {1: __notes.add_note, 2: __notes.manage_note_by_id, 3: __notes.read_all_notes,
                   4: __notes.save_notes_to_file}
 
