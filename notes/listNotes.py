@@ -1,11 +1,11 @@
 import pickle
 from note import Note
-from ViewNotes import View
+from ViewNotes import ViewNotes
 
 
-class ListOfNotes:
+class ListNotes:
     __notes = []
-    __view = View()
+    __view = ViewNotes()
     __index = 0
     __index_stack = []
 
@@ -18,7 +18,7 @@ class ListOfNotes:
                 self.__index_stack = pickle.load(file)
         except EOFError:
             self.__notes = []
-            self.__view = View()
+            self.__view = ViewNotes()
             self.__index = 0
             self.__index_stack = []
 
